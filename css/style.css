@@ -1,0 +1,35 @@
+button, input {
+  font-size: 1em;
+  height: 30px;
+  margin: 10px 10px 10px 10px;
+  border-style: none;
+  border: 1px solid grey;
+  padding: 0px;
+}
+
+button {
+  width: 160px;
+  cursor: pointer;
+  color: orange;
+  background-color: transparent;
+}
+
+input {
+  width: 320px;
+  padding-left: 10px;
+}
+
+#searchButton {
+  height: 32px;
+  color: white;
+  background-color: orange;
+  border: none;
+}
+
+.gifBox {
+  float: left;
+  margin-right: 10px;
+}
+#gifDisplay {
+  position: relative;
+}
