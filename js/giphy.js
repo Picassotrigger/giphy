@@ -38,7 +38,7 @@ function loopArray(array) {
 
 function addNewButton() {
   var button = $("<button>");
-  var newName = $("input#searchBox").val();
+  var newName = $("input#searchBox").val().trim();
   button = button.text(newName);
   mainArray.push(newName);
   $("div#buttonDisplay").empty();
@@ -94,7 +94,7 @@ loopArray(mainArray);
 
 $("button#searchButton").on("click", addNewButton);
 
-$("button.targetButton").on("click", function() {
+$(document).on("click", ".targetButton", function() {
   console.log(this.value);
   searchTerm = this.value;
   ajaxCall();
